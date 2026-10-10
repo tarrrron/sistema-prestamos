@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Prestamo de Equipos</title>
+</head>
+<body>
+    <h2>Sistema de Prestamo de Equipos</h2>
+
+    <label>Estudiante:</label>
+    <input type="text" id="estudiante">
+
+    <br><br>
+
+    <label>Equipo:</label>
+    <select id="equipo">
+        <option>Laptop</option>
+        <option>Proyector</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="registrar()">Registrar</button>
+
+    <p id="resultado"></p>
+
+    <script>
+        function registrar() {
+            let estudiante =
+                document.getElementById("estudiante").value;
+            let equipo =
+                document.getElementById("equipo").value;
+
+            document.getElementById("resultado").innerText =
+                "Estudiante: " + estudiante +
+                " | Equipo: " + equipo;
+        }
+    </script>
+</body>
+</html>
